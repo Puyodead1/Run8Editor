@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>..\..\Track Studio\bin\Debug\net6.0\plugins\</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath>..\..\Track Studio\bin\Release\net6.0\plugins\</OutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+    <PackageReference Include="OpenTK" Version="3.3.3" />
+  </ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Run8-V3-reverse-engineering\Run8\LibRun8\LibRun8.csproj" />
+	  <ProjectReference Include="..\..\GLFrameworkEngine\GLFrameworkEngine.csproj" />
+	  <ProjectReference Include="..\..\MapStudio.UI\MapStudio.UI.csproj" />
+	  <ProjectReference Include="..\..\Toolbox.Core\Toolbox.Core.csproj" />
+	</ItemGroup>
+</Project>

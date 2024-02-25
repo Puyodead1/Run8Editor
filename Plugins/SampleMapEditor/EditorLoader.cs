@@ -44,9 +44,9 @@ namespace SampleMapEditor
         public bool Identify(File_Info fileInfo, Stream stream)
         {
             //For the sake of a demo, always load the plugin
-            return true;
+            //return true;
             //Example for loading as extension check
-            return fileInfo.Extension == ".szs";
+            //return fileInfo.Extension == ".szs";
             //Example for checking inside the file for magic
             //NOTE you must use "true" in arguments to keep stream open
             using (var reader = new FileReader(stream, true))
